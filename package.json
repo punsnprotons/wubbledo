@@ -1,0 +1,19 @@
+{
+  "name": "prj_wubbleai_ais-vc_0001",
+  "version": "1.0.0",
+  "description": "tbd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VisionGrp/PRJ_WUBBLEAI_AIS-VC_0001.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VisionGrp/PRJ_WUBBLEAI_AIS-VC_0001/issues"
+  },
+  "homepage": "https://github.com/VisionGrp/PRJ_WUBBLEAI_AIS-VC_0001#readme"
+}
