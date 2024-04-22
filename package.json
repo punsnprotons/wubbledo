@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/VisionGrp/PRJ_WUBBLEAI_AIS-VC_0001/issues"
   },
-  "homepage": "https://github.com/VisionGrp/PRJ_WUBBLEAI_AIS-VC_0001#readme"
+  "homepage": "https://github.com/VisionGrp/PRJ_WUBBLEAI_AIS-VC_0001#readme",
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+  }
 }
