@@ -1,3 +1,5 @@
+console.log("development.env.js loaded");
+
 const selfsigned = require("selfsigned");
 const pems = selfsigned.generate(null, { days: 3650, algorithm: "sha256" });
 
@@ -6,20 +8,20 @@ module.exports = {
   KNEXFILE: {
     client: "mysql",
     connection: {
-      host: "rm-gs5vl5q0s90b3om68go.mysql.singapore.rds.aliyuncs.com",
+      host: "localhost",
       port: "3306",
-      user: "adam",
-      password: "Vision123$",
-      database: "wubble",
+      user: "root",
+      password: "",
+      database: "wubble_prod",
       timezone: "Z",
     },
     useNullAsDefault: true,
   },
 
-  OPENAI_API_KEY: "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",
+  OPENAI_API_KEY: "sk-proj-sk-proj-IH1B1iBjxH90JuLiqHeAT3BlbkFJ6LGFyxsNKmwpSpydAbKK",
   PINECONE_API_KEY: "23d444b5-d38a-40d7-bd6a-74b5b3a3c674",
   CONTEXT_MAX: 2000,
-  RYTR_API_KEY: "JEQQLGV0MJHIRHGLLHLDH",
+  RYTR_API_KEY: "2U1O8HFK2V9SI_SFAB1DD",
 
   JWT_REFRESH_STORE: "keyv",
 

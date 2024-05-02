@@ -122,6 +122,7 @@ const setTokensToHeader = (res, { access_token, refresh_token }) => {
 
 const authUser = async (req, res, next) => {
   // console.log('auth express', req.baseUrl, req.path, req.cookies, req.signedCookies)
+  console.log("hello world");
   let access_token = null
   try {
     let tmp = req.header('Authorization') || req.cookies?.Authorization || req.query?.Authorization

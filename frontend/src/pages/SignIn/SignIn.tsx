@@ -138,7 +138,7 @@ const SignIn = () => {
             const signInData: any = { email, password }
 
             const hasError = validate(signInData)
-
+            console.log(hasError)
             if (hasError.isError) {
                 setIsLoading(false)
                 throw new Error('Invalid credentials.')

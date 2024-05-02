@@ -5,8 +5,9 @@ require('cross-fetch/polyfill')
 const { randomMilliomNumber, randomTopK } = require('../constants/index')
 
 const API_URL = "https://api.replicate.com/v1"
-const REPLICATE_API_TOKEN = "r8_GdOlLYxTtlKIwLShX3jMtrKS3psGr9z1gyJnq"
-
+//const REPLICATE_API_TOKEN = "8cf61ea6c56afd61d8f5b9ffd14d7c216c0a93844ce2d82ac1c9ecc9c7f24e05"
+//REPLICATE_API_TOKEN=r8_NspMCV9GU85rGB0R4crd62Xs3xH3gz61ZLdfC
+const REPLICATE_API_TOKEN="r8_dMW9NbOlXHQIttdSwTILZc8C4cUit5g2c4gKk"
 const replicate = new Replicate({
     auth: REPLICATE_API_TOKEN,
     fetch: fetch,
