@@ -1,8 +1,7 @@
 ## Description
 
 Contains secret config files
-- common.env.js
-- [env].env.js
+
 
 The files are not committed To Github
 
