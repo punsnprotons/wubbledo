@@ -2,7 +2,7 @@
 const Knex = require('knex')
 
 module.exports = class StoreKnex {
-	constructor(options = global.CONFIG) {
+  constructor(options = global.CONFIG) {
     const { KNEXFILE } = options || {}
     this.KNEXFILE = KNEXFILE
     this.knex = null
@@ -14,14 +14,24 @@ module.exports = class StoreKnex {
       try {
         this.knex = Knex(this.KNEXFILE)
         // sqlite, may need to use another statement with other sql dbs
-        await this.knex.raw('select 1+1 as result').then(() => console.log('knex CONNECTED')).catch(err => { console.log('DB error: ' + err.toString()) })
+        await this.knex.raw('select 1+1 as result')
+          .then(() => console.log('knex CONNECTED'))
+          .catch(err => {
+            if (err.errors) {
+              err.errors.forEach(error => {
+                console.error('DB error:', error);
+              });
+            } else {
+              console.error('DB error:', err);
+            }
+          })
       } catch (e) {
         console.log('knex CONNECT ERROR', e.toString())
       }
     }
   }
-  get () { return this.knex }
-  async close () {
+  get() { return this.knex }
+  async close() {
     if (this.knex) await this.knex.destroy()
     console.log('knex closed')
   }

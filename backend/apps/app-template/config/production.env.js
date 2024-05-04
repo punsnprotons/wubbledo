@@ -1,17 +1,17 @@
 const selfsigned = require("selfsigned");
 const pems = selfsigned.generate(null, { days: 3650, algorithm: "sha256" });
-process.env['NODE_TLS_REJECT_UNAUTHORIZED']=0
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
 module.exports = {
   //Vendure Db (main)
   KNEXFILE: {
     client: "mysql",
     connection: {
-      host: "localhost",
-      port: "3306",
-      user: "tlc_prod_rds_user",
-      password: "Vision@123$", 
-      database: "wubble",
+      host: "157.230.32.184",
+      port: 3306,
+      user: "root",
+      password: "wubbleadmin@Wubble999",
+      database: "wubble_prod",
       timezone: "Z",
     },
     useNullAsDefault: true,
@@ -80,9 +80,9 @@ module.exports = {
   // OAUTH_OPTIONS: null,
   // FCM_SERVER_KEY: '', // Generated from firebase web dashboard
 
-  HTTPS_CERTS: { 
+  HTTPS_CERTS: {
     key: // pems.private,
-`-----BEGIN PRIVATE KEY-----
+      `-----BEGIN PRIVATE KEY-----
 MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDJoUn1oc0fQ26C
 sgD2F9RjczPo50GwIhrqCGB/BTkTdtoUm2oADhCdKi4xdjxB1VGVz0O8SEIJJW4J
 KsxDeT1pet3MO+JN4igMiK/eXNOAhCVOLeU/WWe6jfRamVq38T8rDWtp5YFTuCMr
@@ -111,7 +111,7 @@ lUVaIwIIhlrxspUxrVppWRBK0/CUxYjjyGTH6NgaBiIYFUjsOMXgrio93wGlifPt
 y/NPEH5G0pnEs1Gh+g142IvF
 -----END PRIVATE KEY-----`,
     cert: // pems.cert
-`-----BEGIN CERTIFICATE-----
+      `-----BEGIN CERTIFICATE-----
 MIIGNTCCBR2gAwIBAgIQb8/Kdi3pArWHt9QOFSGxIjANBgkqhkiG9w0BAQsFADCB
 jzELMAkGA1UEBhMCR0IxGzAZBgNVBAgTEkdyZWF0ZXIgTWFuY2hlc3RlcjEQMA4G
 A1UEBxMHU2FsZm9yZDEYMBYGA1UEChMPU2VjdGlnbyBMaW1pdGVkMTcwNQYDVQQD

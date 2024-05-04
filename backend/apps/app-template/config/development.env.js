@@ -76,7 +76,7 @@ module.exports = {
   DID_APIKEY: "a2VuLmhhcmp1bmErNTdAdmlzaW9uZ3JvdXAuY28:Iy-NX2J3VodKHGoXeBt6b",
   DID_AVATAR_SOURCE: "https://i.postimg.cc/fy59Ph8n/o-prud3nce.jpg",
   // DID_AVATAR_SOURCE: 'https://i.postimg.cc/gcHB0G5z/prud-new-avatar.jpg',
-  
+
   // NOTE! in secret
 
   // KNEXFILE: null,
