@@ -7,7 +7,7 @@ module.exports = {
   KNEXFILE: {
     client: "mysql",
     connection: {
-      host: "rm-gs597ddvelra9h6w6.mysql.singapore.rds.aliyuncs.com",
+      host: "localhost",
       port: "3306",
       user: "tlc_prod_rds_user",
       password: "Vision@123$", 
