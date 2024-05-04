@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VisionGrp/PRJ_WUBBLEAI_AIS-VC_0001.git"
+    "url": "git+https://github.com/punsnprotons/wubbledo.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/VisionGrp/PRJ_WUBBLEAI_AIS-VC_0001/issues"
+    "url": "https://github.com/punsnprotons/wubbledo.git"
   },
-  "homepage": "https://github.com/VisionGrp/PRJ_WUBBLEAI_AIS-VC_0001#readme",
+  "homepage": "https://github.com/punsnprotons/wubbledo.git",
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
